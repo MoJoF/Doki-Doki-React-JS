@@ -1,0 +1,206 @@
+@keyframes Screensaver {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes ShowMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  background: radial-gradient(circle, #fddbef 25%, transparent 26%),
+    radial-gradient(circle at bottom left, #fddbef 12%, transparent 13%),
+    radial-gradient(circle at bottom right, #fddbef 12%, transparent 13%),
+    radial-gradient(circle at top left, #fddbef 12%, transparent 13%),
+    radial-gradient(circle at top right, #fddbef 12%, transparent 13%);
+  background-size: 6em 6em;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.5s;
+  position: absolute;
+  z-index: 1;
+  user-select: none;
+}
+
+.screen {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: snow;
+  animation: Screensaver 7s ease-in-out;
+}
+
+.salvato {
+  width: 20vw;
+}
+
+.mainMenu {
+  animation: ShowMenu 0.5s ease-in;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 20vw;
+  position: fixed;
+  top: 2vh;
+  left: 3vw;
+  z-index: 5;
+}
+
+.menu button {
+  background: transparent;
+  color: snow;
+  text-shadow: 1px 0 4px pink, 0 1px 4px pink, -1px 0 4px pink, 0 -1px 4px pink;
+  border: none;
+  font-size: 1.5vw;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.menu {
+  position: relative;
+  z-index: 5;
+  top: 50vh;
+  margin-left: 1vw;
+  text-align: center;
+}
+
+.newGame {
+  margin-top: 3vh;
+  top: 5vh;
+  left: 10vh;
+}
+
+.enterCode {
+  top: 13vh;
+  right: 4vw;
+}
+
+.writePoem {
+  top: 30vh;
+}
+
+/* Изображения */
+.art,
+.container {
+  transition: 0.5s;
+  animation: ShowMenu 0.5s ease-in;
+}
+
+.yuri {
+  position: absolute;
+  left: 50vw;
+  top: 10vh;
+  z-index: 1;
+}
+
+.natsuki {
+  position: absolute;
+  left: 62vw;
+  top: 19vh;
+  z-index: 2;
+  scale: 1.1;
+}
+
+.sayori {
+  z-index: 3;
+  position: absolute;
+  left: 45vw;
+  top: 30vh;
+  scale: 1.2;
+}
+
+.monika {
+  z-index: 4;
+  position: absolute;
+  left: 70vw;
+  top: 35vh;
+  scale: 1.3;
+}
+
+/* Запрос ввода имени пользователя */
+.getName {
+  background: radial-gradient(circle, #f359a7 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #f359a7 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #f359a7 5%, transparent 6%),
+    radial-gradient(circle at top left, #f359a7 5%, transparent 6%),
+    radial-gradient(circle at top right, #f359a7 5%, transparent 6%);
+  background-size: 3em 3em;
+  background-color: #e3b7c4;
+  width: 20vw;
+  height: 15vh;
+  position: absolute;
+  top: 38.5vh;
+  left: 50vw;
+  z-index: 15;
+  border-radius: 20px;
+  box-shadow: pink 5px 5px 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.playerName {
+  border: none;
+  border-bottom: 3px solid #f359a7;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: snow;
+  outline: none;
+}
+
+.playerName::placeholder {
+  color: snow;
+  font-weight: bold;
+}
+
+.confirmName {
+  border: 1px solid pink;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 10vw;
+  height: 5vh;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.artNight {
+  object-fit: cover;
+  width: 100vw;
+}

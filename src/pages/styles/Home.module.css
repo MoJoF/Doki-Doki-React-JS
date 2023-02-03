@@ -1,0 +1,31 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #f359a7 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #f359a7 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #f359a7 5%, transparent 6%),
+    radial-gradient(circle at top left, #f359a7 5%, transparent 6%),
+    radial-gradient(circle at top right, #f359a7 5%, transparent 6%);
+  background-size: 3em 3em;
+  background-color: #e3b7c4;
+}
+
+.play {
+  border: 1px solid pink;
+  border-radius: 1vw;
+  font-weight: bold;
+  width: 10vw;
+  height: 5vh;
+  cursor: pointer;
+}
+
+button {
+  background: snow;
+  color: black;
+  font-weight: bold;
+  text-shadow: none;
+}

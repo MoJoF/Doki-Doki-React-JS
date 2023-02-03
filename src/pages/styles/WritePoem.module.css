@@ -1,0 +1,90 @@
+@keyframes jump {
+  30% {
+    transform: translateY(-3.8em);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-1.5em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.writePoem {
+  background: url(https://ddlc.johnanimespacemarine.com/images/bg/notebook.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+}
+
+.words {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+  width: 30vw;
+  position: absolute;
+  top: 17vh;
+  left: 38vw;
+  height: 65vh;
+}
+
+span {
+  display: block;
+  font-size: 1.5vw;
+  width: 50%;
+  white-space: pre;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+}
+
+span:hover {
+  color: purple;
+}
+
+.progress {
+  position: absolute;
+  top: 9vh;
+  left: 65vw;
+}
+
+.imgs {
+  position: absolute;
+  top: 75vh;
+  left: 3vw;
+}
+
+.sayori,
+.natsuki,
+.yuri,
+.monika {
+  height: 90px;
+}
+
+.active {
+  animation: jump 1s ease-in;
+}
+
+/* Модальное окно */
+.modal {
+  position: absolute;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: snow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultPic {
+  background-size: cover;
+  width: 50vw;
+}

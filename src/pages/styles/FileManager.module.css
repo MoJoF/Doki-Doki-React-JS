@@ -1,0 +1,52 @@
+.fileManager {
+  display: flex;
+  justify-content: center;
+  font-family: "Comic Sans MS";
+}
+
+.panel {
+  background: #ff7d80;
+  padding: 20px;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* Список директорий */
+.dirs {
+  background: #ff4d55;
+  height: inherit;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.item:hover {
+  background: #ff638e;
+}
+
+.itemIco {
+  width: 70px;
+}
+
+/* Предпросмотр */
+.preview {
+  background: #ff4d55;
+  height: inherit;
+  width: 70%;
+  border-radius: 0 10px 10px 0;
+}
