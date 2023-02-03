@@ -11,8 +11,6 @@ export default function Dirs(props) {
     }
   }
 
-  console.log(arr);
-
   return (
     <div className={styles.dirs}>
       {arr.map((item) => (
@@ -33,6 +31,8 @@ export default function Dirs(props) {
             alt=""
           />
           {item.title}
+          <br />
+          {item.path}
         </div>
       ))}
     </div>
