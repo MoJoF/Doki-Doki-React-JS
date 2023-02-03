@@ -1,26 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "../styles/FileManager.module.css";
 
 export default function Dirs(props) {
   let arr = props.files.default;
 
-  useEffect(() => {
-    if (props.currentDir === "default") {
-      arr = props.files.default;
-    } else if (props.currentDir === "files") {
-      arr = props.files.files;
-    } else if (props.currentDir === "music") {
-      arr = props.files.music;
-    } else if (props.currentDir === "images") {
-      arr = props.files.images;
-    } else if (props.currentDir === "monika") {
-      arr = props.files.monika;
-    }
-  }, [props.currentDir]);
-
   function goTo(item) {
     if (item.type === "folder") {
       props.setCurrentDir(item.path);
+      console.log(props.currentDir);
     }
   }
 
